@@ -40,6 +40,5 @@ def guess_number ():
                 matched = True
                 break
 
-if __name__ == '__main__':
-    guess_number ()
+guess_number ()
    
