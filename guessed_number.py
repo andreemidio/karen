@@ -9,12 +9,16 @@ def guess_number ():
 
     print( "Guess the number between 1 - 100 \n")
 
-    matched: bool =  False
+    guessed_number: bool =  False
    
-    while matched is False:
+    while guessed_number is False:
         user_guesses = int(input(" Put your number to guess > "))
 
-        if user_guesses <= guess_number:
+        if user_guesses > 100:
+            print (" Please, guess a number between 1 - 100 \n")
+            print (f" {user_guesses} is greater than 100 \n ")
+            
+        elif user_guesses <= guess_number:
             print ("Your guess is too high, try again \n")
 
         elif user_guesses >= guess_number:
